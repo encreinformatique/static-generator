@@ -8,7 +8,7 @@ RUN curl -sL https://deb.nodesource.com/setup_18.x -o /tmp/nodesource_setup.sh
 
 RUN apt-get update && apt-get install -y nodejs
 
-RUN apt-get install -y npn
+RUN apt-get install -y npm
 
 COPY generator.sh /usr/bin/generator
 
