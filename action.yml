@@ -16,3 +16,9 @@ inputs:
     description: "The commiter's name"
     required: true
     default: ${{ github.actor }}
+  header:
+    description: "The header file, if any"
+    required: false
+  footer:
+    description: "The footer file, if any"
+    required: false
