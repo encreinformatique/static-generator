@@ -10,8 +10,7 @@ RUN apt-get update && apt-get install -y nodejs
 
 RUN apt-get install -y npm
 
-COPY generator.sh /usr/bin/generator
-
-COPY entrypoint.sh /entrypoint.sh
+COPY --chmod=0755 generator.sh /usr/bin/generator
+COPY --chmod=0755 entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
